@@ -6,31 +6,25 @@ div#background {
     /* background-size: auto; */
     /* background-size: 100% 100%; */
     /* background-repeat: no-repeat; */
-
     /* width: 100%;
     height: auto; */
-
-
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-	
+    position: fixed;
+    top: 0;
+    left: 0;
     /* Preserve aspet ratio */
     min-width: 100%;
     min-height: 100%;
-
 }
 
-body{
+body {
     background-image: url('assets/milky-way-5295160_1280.jpg');
     font-family: 'Russo One', sans-serif;
-    
     /* color: white; */
     /* position: ti;  */
     /* background-size: auto;
     background-size: 100% 100%;
     background-repeat: no-repeat;  */
-     /* position: absolute; */
+    /* position: absolute; */
 }
 
 div#hero {
@@ -39,11 +33,10 @@ div#hero {
     background-image: url('assets/hero.png');
     position: absolute;
     left: 575px;
-    top: 500px; 
+    top: 500px;
     margin: auto;
-    max-width: 900px;      
+    max-width: 900px;
     margin-top: 50px;
-
     margin-bottom: 50px;
 }
 
@@ -66,17 +59,17 @@ div#enemies {
     position: absolute;
 }
 
-div#form_id{ 
+div#form_id {
     margin-top: 100px;
-    width : 1000px;
+    width: 1000px;
     height: 900;
     /* height : 800px; */
     margin-right: 100px;
     margin-left: 100px;
     /* margin-top: auto; */
-} 
+}
 
-div.para{
+div.para {
     margin-top: 100px;
     /* width : 1000px; */
     /* height: 900; */
@@ -92,10 +85,24 @@ div.enemy {
     position: absolute;
 }
 
-.navbar{
+.navbar {
     font-family: 'Russo One', sans-serif;
 }
-.xtc{
+
+.xtc {
     font-family: 'Russo One', sans-serif;
     color: white;
+}
+
+div#hit {
+    font-family: 'Russo One', sans-serif;
+    color: white;
+    font-size: 100px;
+}
+
+div#miss {
+    font-family: 'Russo One', sans-serif;
+    color: white;
+    font-size: 100px;
+    margin-right: 500px;
 }

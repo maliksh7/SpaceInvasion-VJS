@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Game</title>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="player.html">
+    <style>
+        body {
+            background-image: url('game.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+        }
+        
+        .container1 {
+            background-color: aquamarine;
+            width: 600px;
+            padding: 80px;
+            margin: 400px;
+            border-radius: 15px;
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body id="mid">
+
+
+
+    <div class="container1">
+        <form action="player.html" method="GET">
+            <label>Player Name: </label><br>
+            <input type="text" name="Pname"> <br><br>
+            <label for="level">Choose Difficulty Level: </label><br>
+            <input type="radio" name="level" value="Easy">
+            <label for="easy">Easy</label><br>
+            <input type="radio" name="level" value="Hard">
+            <label for="hard">Hard</label><br>
+
+            <button type="submit" onclick="myFunction()">NEXT</button>
+        </form>
+        <p class="container2">
+            <audio style="display:none" id="myAudio" controls autoplay>
+					<source src="music.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+
+            <p>Click the buttons to play or pause the audio.</p>
+
+            <button onclick="playAudio()" type="button">Play Audio</button>
+            <button onclick="pauseAudio()" type="button">Pause Audio</button>
+        </p>
+    </div>
+
+
+    <script>
+        var x = document.getElementById("myAudio");
+
+        function playAudio() {
+            x.play();
+        }
+
+        function pauseAudio() {
+            x.pause();
+        }
+    </script>
+
+</body>
+
+</html>
